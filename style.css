@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0066cc;
+}
+
+.year {
+  border-left: 5px solid #0066cc;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.semester {
+  background-color: #e6f2ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.subject {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f9ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.subject.completed {
+  background-color: #cceeff;
+  text-decoration: line-through;
+}
+
+.progress-bar {
+  background-color: #b3d9ff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+button#reset {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+button#reset:hover {
+  background-color: #004d99;
+}
